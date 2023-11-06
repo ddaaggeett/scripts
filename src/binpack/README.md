@@ -7,4 +7,17 @@ This Bash script, named `binpack.sh`, automates the process of creating an execu
 To use this script, provide it with the Node.js script filename as an argument. The script determines the name of the executable, creates a wrapper script referencing the full path of the original Node.js script, and adds the executable to a specified directory (default: `/usr/local/bin`) to make it globally accessible.
 
 ```bash
-./binpack.sh <script_filename.js>
+sudo ./binpack.sh <script_filename.js>
+```
+To use this itself as a global executable:
+
+```bash
+sudo chmod +x ./binpack.sh
+sudo cp ./binpack.sh /usr/local/bin/binpack
+```
+then from any directory:
+
+```bash
+sudo binpack <script_filename.js>
+```
+You now have a global executable `script_filename` to run anywhere
