@@ -1,9 +1,5 @@
 #!/usr/bin/bash
 
-# This Bash script, named binpack.sh, automates the process of creating an executable script from a Node.js script and making it globally accessible. The generated executable script can be executed from any directory while correctly referencing the original script's location. This allows for convenient, globally accessible execution of Node.js scripts without specifying the file extension.
-
-# The script takes the Node.js script filename as an argument, determines the name of the executable, creates a wrapper script referencing the full path of the original script, and adds the executable to a specified directory (e.g., /usr/local/bin) to make it globally accessible.
-
 # Check if the correct number of arguments is provided
 if [ "$#" -ne 1 ]; then
   echo "Correct your usage to: $0 <script_filename>"

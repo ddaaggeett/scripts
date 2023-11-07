@@ -1,21 +1,20 @@
 # Create Executable Script from Node.js
 
-This Bash script, named `binpack.sh`, automates the process of creating an executable script from a Node.js script, making it globally accessible. The generated executable script can be executed from any directory while correctly referencing the original script's location. This simplifies the execution of Node.js scripts without the need to specify the file extension.
+This Bash script, named [binpack.sh](./binpack.sh), automates the process of creating an executable script from a Node.js/Python3/Bash/Ruby script and making it globally accessible. The generated executable script can be executed from any directory while correctly referencing the original script's location. This allows for convenient, globally accessible execution of Node.js/Python3/Bash/Ruby scripts without specifying the file extension.
+
+The script takes the Node.js/Python3/Bash/Ruby script filename as an argument, determines the name of the executable, creates a wrapper script referencing the full path of the original script, and adds the executable to a specified directory (e.g., /usr/local/bin) to make it globally accessible.
 
 ## Usage
 
-To use this script, provide it with the Node.js script filename as an argument. The script determines the name of the executable, creates a wrapper script referencing the full path of the original Node.js script, and adds the executable to a specified directory (default: `/usr/local/bin`) to make it globally accessible.
+To use this script, provide it with the Node.js/Python3/Bash/Ruby script filename as an argument. The script determines the name of the executable, creates a wrapper script referencing the full path of the original Node.js/Python3/Bash/Ruby script, and adds the executable to a specified directory (default: `/usr/local/bin`) to make it globally accessible.
+
+
+First, use this `binpack.sh` itself as a global executable:
 
 ```bash
-sudo ./binpack.sh <script_filename.js>
+sudo sh ./binpack.sh ./binpack.sh
 ```
-To use this itself as a global executable:
-
-```bash
-sudo chmod +x ./binpack.sh
-sudo cp ./binpack.sh /usr/local/bin/binpack
-```
-then from any directory:
+Then, from any directory:
 
 ```bash
 sudo binpack <script_filename.js>
