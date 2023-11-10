@@ -23,7 +23,7 @@ case "$extension" in
     # For Bash scripts
     executableName="$(basename "$scriptFilename" .sh)"
     shebang="#!/usr/bin/bash"
-    interpreter="source"
+    interpreter="bash"
     ;;
   py)
     # For Python scripts
