@@ -11,11 +11,11 @@ To use this script, provide it with the Node.js/Python3/Bash/Ruby script filenam
 First, use this `binpack.sh` itself as a global executable:
 
 ```bash
-sudo sh ./binpack.sh ./binpack.sh
+sh ./binpack.sh ./binpack.sh
 ```
 Then, from any directory:
 
 ```bash
-sudo binpack <script_filename.js>
+binpack <script_filename.js>
 ```
 You now have a global executable `script_filename` to run anywhere

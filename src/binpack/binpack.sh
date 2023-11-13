@@ -51,7 +51,7 @@ case "$extension" in
 esac
 
 # Specify the directory for creating the executable scripts
-scriptDirectory="/usr/local/bin"
+scriptDirectory="$HOME/.local/bin"
 
 # Get the full path of the original script
 originalScriptPath="$(cd "$(dirname "$scriptFilename")"; pwd)/$(basename "$scriptFilename")"
