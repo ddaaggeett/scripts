@@ -2,3 +2,5 @@ node_modules
 *lock.json
 tests
 data
+config.*
+!config.example.*
