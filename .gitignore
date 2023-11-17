@@ -4,3 +4,4 @@ tests
 data
 config.*
 !config.example.*
+*.wav

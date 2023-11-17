@@ -1,10 +1,13 @@
 #!/usr/bin/bash
 
-sudo apt install curl
+sudo apt install curl -y
 sudo apt install net-tools -y
+sudo apt install pip -y
+sudo apt install ffmpeg -y
 
 # nvm - node.js
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+exec bash
 nvm install --lts
 
 # yt-dlp
@@ -31,4 +34,4 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/yout_example_name
 echo "copy paste the following into github SSH:"
 cat ~/.ssh/your_example_name.pub
-echo "after SSH saved to github, run: sh ./github.sh"
+echo "after SSH saved to github, run: sh ./secondary.sh"

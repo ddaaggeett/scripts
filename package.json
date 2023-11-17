@@ -8,5 +8,7 @@
   },
   "author": "ddaaggeett",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2"
+  }
 }
