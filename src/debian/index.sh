@@ -1,9 +1,12 @@
 #!/usr/bin/bash
 
+source alias_init.sh
+
 sudo apt install curl -y
 sudo apt install net-tools -y
 sudo apt install pip -y
 sudo apt install ffmpeg -y
+sudo apt install gphoto2 -y
 
 # nvm - node.js
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
@@ -31,7 +34,7 @@ gsettings set org.gnome.shell favorite-apps "['org.gnome.Terminal.desktop', 'org
 # generate ssh
 ssh-keygen -t ed25519 -C "your_example_name"
 eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/yout_example_name
+ssh-add ~/.ssh/your_example_name
 echo "copy paste the following into github SSH:"
 cat ~/.ssh/your_example_name.pub
 echo "after SSH saved to github, run: sh ./secondary.sh"
