@@ -19,10 +19,11 @@
 3. Copy + right-click `Paste` the following in your terminal. This will run the **`configuration script`**:
 
     ```bash
-    wget https://github.com/ddaaggeett/scripts/archive/main.zip -P ~/github && cd ~/github
-    sudo unzip main.zip && mv ./scripts-main ./scripts && cd ./scripts/src/debian/
-    sudo chmod +x ./index.sh
-    sudo ./index.sh
+    mkdir ~/ddaaggeett && cd ~/ddaaggeett
+    wget "https://github.com/ddaaggeett/scripts/archive/main.zip"
+    unzip main.zip
+    chmod +x ./scripts-main/src/debian/index.sh
+    ./scripts-main/src/debian/index.sh
     ```
     Using your keyboard, accept all prompts.
  ___
