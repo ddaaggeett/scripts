@@ -28,7 +28,8 @@
  ___
 
 This does the following:
-- **enables convenient [terminal commands](./alias.md)**
+- enables convenient [terminal commands](./init_alias.sh)
+- enables custom executables with [path update](./init_binpack.sh)
 - installs preferred [software](./software.md)
 - sets preferred <kbd>![Windows Key][newwinlogo]</kbd> [key command shortcuts](./keys.md) for workflow
 ___

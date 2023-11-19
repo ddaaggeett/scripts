@@ -1,16 +1,18 @@
 #!/usr/bin/bash
 
-source alias_init.sh
+source init_alias.sh
+source init_binpack.sh
 
 sudo apt install curl -y
 sudo apt install net-tools -y
 sudo apt install pip -y
 sudo apt install ffmpeg -y
 sudo apt install gphoto2 -y
+sudo apt install git -y
 
 # nvm - node.js
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
-exec bash
+exec bash # TODO: does this work? reopens bash?
 nvm install --lts
 
 # yt-dlp
@@ -35,6 +37,6 @@ gsettings set org.gnome.shell favorite-apps "['org.gnome.Terminal.desktop', 'org
 ssh-keygen -t ed25519 -C "your_example_name"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/your_example_name
-echo "copy paste the following into github SSH:"
+echo -e "\ncopy/paste the following into github SSH:\n"
 cat ~/.ssh/your_example_name.pub
-echo "after SSH saved to github, run: sh ./secondary.sh"
+echo -e "\nafter SSH saved to github, run: sh ./secondary.sh\n"
