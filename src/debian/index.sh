@@ -30,8 +30,8 @@ curl -O https://github.com/atom/atom/releases/download/v1.60.0/atom-amd64.deb
 sudo dpkg -i atom-amd64.deb
 sudo apt-get install -f
 
-# setting savorite applications 1.terminal 2. files 3. browser 4. text editor
-gsettings set org.gnome.shell favorite-apps "['org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'brave-browser.desktop', 'atom.desktop']"
+# setting savorite applications 1.terminal 2. text editor 3. browser 4. files
+gsettings set org.gnome.shell favorite-apps "['org.gnome.Terminal.desktop', 'atom.desktop', 'brave-browser.desktop', 'org.gnome.Nautilus.desktop']"
 
 # generate ssh
 ssh-keygen -t ed25519 -C "your_example_name"
